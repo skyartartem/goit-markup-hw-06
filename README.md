@@ -1,2 +1,2 @@
-# goit-markup-hw-05
-GoIT group Blended-9 SkyArt Домашнє завдання 05
+# goit-markup-hw-06
+GoIT group Blended-9 SkyArt Домашнє завдання 06
