@@ -561,6 +561,10 @@ color: var(--text-color-on-drk-bgrd);
   fill: var(--text-color-on-drk-bgrd);
 }
  
+.wrapper-signup-form {
+  margin-left: auto;
+}
+
 .adrs .adrs-item:not(:last-child) {
   margin-bottom: 9px;
   /* border: 1px solid tomato; */
