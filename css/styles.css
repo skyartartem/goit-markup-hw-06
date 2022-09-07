@@ -541,21 +541,55 @@ color: var(--text-color-on-drk-bgrd);
   margin-right: 70px;
 }
 
+/* === Стилізація іконок соцмереж === */
+
 .footer .social-item .links {
   display: flex;
   height: 44px;
   width: 44px;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(68, 69, 78, 1);
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  transition: background-color var(--duration-cubic);
+  transition: background var(--duration-cubic);
 }
 
 .footer .social-item .links:hover,
 .footer .social-item .links:focus {
   background-color: var(--accent-color);  
 }
+
+.footer .social-item .links.twitter:hover,
+.footer .social-item .links.twitter:focus {
+  background-color: rgb(29 155 240);  
+}
+
+.footer .social-item .links.instagram:hover,
+.footer .social-item .links.instagram:focus {
+  background-color: rgba(68, 69, 78, 0.0);  
+}
+
+.footer .social-item .links.facebook:hover,
+.footer .social-item .links.facebook:focus {
+  background-color: rgba(68, 69, 78, 0.0);  
+}
+
+.footer .social-item .links.linkedin:hover,
+.footer .social-item .links.linkedin:focus {
+  background-color: #0a66c2;  
+}
+
+
+.instagram-wraper {
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.facebook-wraper {
+  border-radius: 50%;
+  background-image:linear-gradient(to bottom, #19aefe, #0062e0);
+}
+
 
 .footer .wrapper-social .social-icon {
   fill: var(--text-color-on-drk-bgrd);
@@ -705,13 +739,15 @@ color: var(--text-color-on-drk-bgrd);
 
 .close-but {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 8px;
   right: 8px;
   line-height: 1.42;
   font-weight: 700;
   background-color: var(--main-bgrnd-color);
   color: var(--secondary-text-color);
-  padding: 5px 5px;
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -811,7 +847,7 @@ color: var(--text-color-on-drk-bgrd);
   margin-right: auto;
 }
 
-/* стилізація сторінки -портфоліо- */
+/* === стилізація сторінки -портфоліо === */
 
 .portfolio-title {
   /* display: none; */
