@@ -606,10 +606,46 @@
       
     </footer>
     <div class="backdrop is-hidden" data-modal>
-       <div class="modal">
-        <button data-modal-close type="button" class="close-but">&#10005</button>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum adipisci eos enim odio, rem modi vel totam cupiditate, amet nemo tempora nihil accusamus veritatis atque repellendus animi quaerat, officiis reiciendis iste ab ullam optio aliquid quod. Harum dolor dicta iste fuga. Eius sed incidunt corrupti maiores aspernatur suscipit dicta nemo repellendus animi corporis dolorem, cum placeat at, quam consectetur qui labore facilis dolores enim praesentium quasi iure, delectus quod aliquid. Nam placeat ipsam ex iure totam blanditiis accusantium ipsum eius incidunt. Aspernatur voluptas reiciendis veritatis vitae ducimus eligendi saepe ratione earum, blanditiis voluptatum cum repellat quibusdam nam assumenda odit, rem beatae? Aliquid dicta, sequi dolor minima assumenda alias exercitationem pariatur. Non cupiditate nisi cum voluptas, vitae error facere debitis quo perspiciatis. Vitae rerum odit dolorum delectus optio distinctio error, sapiente reprehenderit modi quae laudantium ipsa, quas, beatae corporis voluptatibus eos ipsam. Pariatur corporis earum odit voluptas architecto laboriosam expedita ad eligendi repudiandae doloribus reiciendis, excepturi, est quis libero. Quidem facere tempora quasi at nesciunt, enim voluptate asperiores quod hic placeat reprehenderit nobis minus provident dolores debitis. Aliquid, ullam doloremque! Quos?</p>
-      </div>
+      <form class="modal">
+        <button data-modal-close type="button" class="close-but">&#10006</button>
+
+        <h2 class="modal-form-title">Залиште свої дані, ми вам передзвонимо</h2>
+
+        <label class="label-user" for="user-name">Ім'я</label>
+        <div class="input-wraper">
+          <input class="input-user" type="text" id="user-name" required>
+          <svg class="icon-human" width="18" height="18">
+            <use href="./images/icons.svg#icon-human"></use>
+          </svg>
+        </div>
+
+        <label class="label-user" for="user-tel">Телефон</label>
+        <div class="input-wraper">
+          <input class="input-user" type="tel" id="user-tel" required>
+          <svg class="icon-human" width="18" height="18">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </div>
+
+        <label class="label-user" for="modal-user-email">Пошта</label>
+        <div class="input-wraper">
+          <input class="input-user" type="text" id="modal-user-email" required>
+          <svg class="icon-human" width="18" height="18">
+            <use href="./images/icons.svg#icon-email-black"></use>
+          </svg>
+        </div>
+
+        <label class="label-user" for="user-coment">Коментар</label>
+        <textarea class="input-user-coment" name="user-coment" id="user-coment"></textarea>
+
+        <fieldset class="chek-box">
+          <input type="checkbox" id="user-confirm" required>
+          <label for="user-confirm">Погоджуюся з розсилкою та приймаю</label> 
+          <a href="http://">Умови договору</a>       
+        </fieldset>
+
+        <button class="btn-signup-form" type="submit">Відправити</button>
+      </form>
     </div>
     <script src="./js/modal.js"></script>
   </body>
