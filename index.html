@@ -587,7 +587,7 @@
         <form class="wrapper-signup-form" name="signup-form">
             <label class="label-name" for="user-email">Підпишіться на розсилку</label> 
             <br>
-            <input type="email" 
+            <input type="email" required
                   class="user-email-input"
                   name="user-email"
                   placeholder="E-mail"
@@ -595,6 +595,10 @@
             <button class="btn-signup-form"
                     type="submit">
                     Підписатися
+                    <svg class="icon-send" width="24" height="24">
+                      <use href="./images/icons.svg#icon-send">
+                      </use>
+                    </svg>
             </button>
         </form>
       </div>

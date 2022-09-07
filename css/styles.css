@@ -561,9 +561,71 @@ color: var(--text-color-on-drk-bgrd);
   fill: var(--text-color-on-drk-bgrd);
 }
  
+/* ====== стилізація форми підписки ===== */
+
 .wrapper-signup-form {
   margin-left: auto;
 }
+
+.label-name {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: calc(16/14);
+  text-transform: uppercase;
+  color: var(--text-color-on-drk-bgrd);
+}
+
+.user-email-input {
+  display: inline-block;
+  margin-right: 12px;
+  height: 50px;
+  width: 358px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.user-email-input::placeholder {
+  font-family: inherit;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.icon-send {margin-left: 10px; }
+
+.btn-signup-form {
+  display: inline-flex;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30/16);
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color:var(--text-color-on-drk-bgrd);
+  padding: 10px 28px;
+  background: var(--accent-color);
+  border-radius: 4px; 
+  cursor: pointer;
+  transition: opacity var(--duration-cubic), 
+    transform var(--duration-cubic), 
+    box-shadow var(--duration-cubic);
+}
+
+.btn-signup-form:hover,
+.btn-signup-form:focus {
+  opacity: 0.95;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.43);
+}
+
+/* ===== стилізація адресного блоку ===== */
 
 .adrs .adrs-item:not(:last-child) {
   margin-bottom: 9px;
