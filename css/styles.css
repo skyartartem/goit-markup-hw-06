@@ -625,6 +625,11 @@ color: var(--text-color-on-drk-bgrd);
   padding-right: 16px;
 }
 
+.user-email-input:focus-within {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+
 .user-email-input::placeholder {
   font-family: inherit;
   color: rgba(255, 255, 255, 0.6);
@@ -934,7 +939,8 @@ color: var(--text-color-on-drk-bgrd);
     transition: transform var(--duration-cubic);
    }
 
-.project-card .links:hover .hoverer-overlay { 
+.project-card .links:hover .hoverer-overlay,
+.project-card .links:focus .hoverer-overlay { 
     transform: translateY(0%);
   }
   
